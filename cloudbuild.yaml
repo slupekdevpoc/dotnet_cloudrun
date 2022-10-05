@@ -12,9 +12,9 @@
    - 'run'
    - 'deploy'
    - $_SERVICE_NAME
-   - '-image'
+   - '--image'
    - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
-   - '-region'
+   - '--region'
    - $_DEPLOY_REGION
  images:
  - '$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
