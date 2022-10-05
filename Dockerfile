@@ -30,4 +30,6 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Run the web service on container startup.
+EXPOSE 8080
+ENV ASPNETCORE_URLS=http://*:8080
 ENTRYPOINT ["dotnet", "HelloWorld.dll"]
